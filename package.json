@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "personalPortfolio",
-  "homepage": "https://Rakesh-git-2.github.io/my-app",
+  "homepage": "https://Rakesh-git-2.github.io/PortfolioV2/",
   "version": "1.0.0",
   "scripts": {
     "build": "react-scripts build",
