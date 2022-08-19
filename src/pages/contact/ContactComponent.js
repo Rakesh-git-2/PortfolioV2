@@ -32,6 +32,7 @@ function Contact(props) {
                 className="profile-pic"
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
                 alt=""
+                style={{ borderRadius: "50%", maxWidth: "350px" }}
               />
             </div>
             <div className="contact-heading-text-div">
@@ -70,7 +71,7 @@ function Contact(props) {
               </p>
               <div className="blogsite-btn-div">
                 <a {...styles} className="general-btn" href={blogSection.link}>
-                  My Twitter Profile
+                  My Linkedin Profile
                 </a>
               </div>
             </div>

@@ -58,7 +58,7 @@ function SkillSection(props) {
         } else {
           return (
             <div className="skills-main-div">
-              <div className="skills-text-div">
+              {/* <div className="skills-text-div">
                 <Fade left duration={1000}>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
                     {skill.title}
@@ -86,7 +86,7 @@ function SkillSection(props) {
                 <div className="skills-image-div">
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
-              </Fade>
+              </Fade> */}
             </div>
           );
         }

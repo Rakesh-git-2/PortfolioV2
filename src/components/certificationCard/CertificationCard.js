@@ -2,6 +2,7 @@ import React from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
+import { autoComposeDeep } from "styletron-react";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
@@ -26,7 +27,10 @@ function CertificationCard(props) {
             <div className="content-overlay"></div>
             <div
               className="cert-header"
-              style={{ backgroundColor: certificate.color_code }}
+              style={{
+                backgroundColor: certificate.color_code,
+                padding: "20px",
+              }}
             >
               <img
                 className="logo_img"
