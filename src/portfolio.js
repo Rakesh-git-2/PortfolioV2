@@ -16,7 +16,7 @@ const greeting = {
   full_name: "Rakesh Srinivasan",
   subTitle: "Full Stack Developer 🔥. Always learning.",
   resumeLink:
-    "https://drive.google.com/file/d/1gwEROKeLmvkw4n17Qr4y3_7Y9A2ywejz/view?usp=sharing",
+    "https://drive.google.com/file/d/1SyqfkSOWSsXqt1-DxgpQ7SWWVLKpJoiG/view?usp=sharing",
   mail: "engineer_rakesh@outlook.com",
 };
 
@@ -336,7 +336,7 @@ const certifications = {
       subtitle: "Coursera",
       logo_path: "Coursera.png",
       certificate_link:
-        "https:\\coursera.org/api/certificate.v1/pdf/V2ASK485YPY4",
+        "https://coursera.org/api/certificate.v1/pdf/V2ASK485YPY4",
       alt_name: "coursera",
       // color_code: "#aAAFED",
       color_code: "#c9f0f0",
