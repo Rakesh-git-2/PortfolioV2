@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PortfolioV2/static/css/main.cd13bd55.chunk.css",
-    "main.js": "/PortfolioV2/static/js/main.d3a37ed6.chunk.js",
-    "main.js.map": "/PortfolioV2/static/js/main.d3a37ed6.chunk.js.map",
-    "runtime-main.js": "/PortfolioV2/static/js/runtime-main.7679bfe3.js",
-    "runtime-main.js.map": "/PortfolioV2/static/js/runtime-main.7679bfe3.js.map",
-    "static/js/2.20ccd2a6.chunk.js": "/PortfolioV2/static/js/2.20ccd2a6.chunk.js",
-    "static/js/2.20ccd2a6.chunk.js.map": "/PortfolioV2/static/js/2.20ccd2a6.chunk.js.map",
+    "main.css": "/PortfolioV2/static/css/main.a2526242.chunk.css",
+    "main.js": "/PortfolioV2/static/js/main.809e6246.chunk.js",
+    "main.js.map": "/PortfolioV2/static/js/main.809e6246.chunk.js.map",
+    "runtime-main.js": "/PortfolioV2/static/js/runtime-main.a7ca9a8c.js",
+    "runtime-main.js.map": "/PortfolioV2/static/js/runtime-main.a7ca9a8c.js.map",
+    "static/js/2.09ddd038.chunk.js": "/PortfolioV2/static/js/2.09ddd038.chunk.js",
+    "static/js/2.09ddd038.chunk.js.map": "/PortfolioV2/static/js/2.09ddd038.chunk.js.map",
     "index.html": "/PortfolioV2/index.html",
-    "precache-manifest.739c0cb58e27eec46eda94965de989a2.js": "/PortfolioV2/precache-manifest.739c0cb58e27eec46eda94965de989a2.js",
+    "precache-manifest.560b0099c59fe6c20ca72bde44113729.js": "/PortfolioV2/precache-manifest.560b0099c59fe6c20ca72bde44113729.js",
     "service-worker.js": "/PortfolioV2/service-worker.js",
-    "static/css/main.cd13bd55.chunk.css.map": "/PortfolioV2/static/css/main.cd13bd55.chunk.css.map",
-    "static/js/2.20ccd2a6.chunk.js.LICENSE.txt": "/PortfolioV2/static/js/2.20ccd2a6.chunk.js.LICENSE.txt",
+    "static/css/main.a2526242.chunk.css.map": "/PortfolioV2/static/css/main.a2526242.chunk.css.map",
+    "static/js/2.09ddd038.chunk.js.LICENSE.txt": "/PortfolioV2/static/js/2.09ddd038.chunk.js.LICENSE.txt",
     "static/media/index.css": "/PortfolioV2/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/Coursera.png": "/PortfolioV2/static/media/Coursera.3fc1833d.png",
     "static/media/Samsung.png": "/PortfolioV2/static/media/Samsung.7a352181.png",
@@ -19,6 +19,7 @@
     "static/media/cwoc.png": "/PortfolioV2/static/media/cwoc.404ae7bc.png",
     "static/media/efi.png": "/PortfolioV2/static/media/efi.82473004.png",
     "static/media/all.css": "/PortfolioV2/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/fctrz.webp": "/PortfolioV2/static/media/fctrz.114e97f2.webp",
     "static/media/flutter.png": "/PortfolioV2/static/media/flutter.54f67219.png",
     "static/media/gdg.png": "/PortfolioV2/static/media/gdg.6364dbb3.png",
     "static/media/github.png": "/PortfolioV2/static/media/github.0ba2aa20.png",
@@ -46,13 +47,14 @@
     "static/media/skillenza.png": "/PortfolioV2/static/media/skillenza.7b7a76ef.png",
     "static/media/ssec.png": "/PortfolioV2/static/media/ssec.8901092d.png",
     "static/media/ssgandhy.png": "/PortfolioV2/static/media/ssgandhy.894ef0fc.png",
+    "static/media/ucdlogo.png": "/PortfolioV2/static/media/ucdlogo.26927302.png",
     "static/media/valora.jpg": "/PortfolioV2/static/media/valora.246ad3ed.jpg",
     "static/media/wrighter.jpg": "/PortfolioV2/static/media/wrighter.02fdae43.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7679bfe3.js",
-    "static/js/2.20ccd2a6.chunk.js",
-    "static/css/main.cd13bd55.chunk.css",
-    "static/js/main.d3a37ed6.chunk.js"
+    "static/js/runtime-main.a7ca9a8c.js",
+    "static/js/2.09ddd038.chunk.js",
+    "static/css/main.a2526242.chunk.css",
+    "static/js/main.809e6246.chunk.js"
   ]
 }

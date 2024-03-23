@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab50b23f83b42159f73f40dc925341c6",
+    "revision": "b70f33188b114761a5b109e5c5efed91",
     "url": "/PortfolioV2/index.html"
   },
   {
-    "revision": "31c65c0d6ff37c33d9f6",
-    "url": "/PortfolioV2/static/css/main.cd13bd55.chunk.css"
+    "revision": "a196d7f9a4a65d99e1b9",
+    "url": "/PortfolioV2/static/css/main.a2526242.chunk.css"
   },
   {
-    "revision": "006a49c3298267c1b13c",
-    "url": "/PortfolioV2/static/js/2.20ccd2a6.chunk.js"
+    "revision": "76812b2f48a6267e0618",
+    "url": "/PortfolioV2/static/js/2.09ddd038.chunk.js"
   },
   {
-    "revision": "32eaebd0b06f4bb60d5e9e5d0e7cd13e",
-    "url": "/PortfolioV2/static/js/2.20ccd2a6.chunk.js.LICENSE.txt"
+    "revision": "c21d579849576bf6a47550572ff70f62",
+    "url": "/PortfolioV2/static/js/2.09ddd038.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "31c65c0d6ff37c33d9f6",
-    "url": "/PortfolioV2/static/js/main.d3a37ed6.chunk.js"
+    "revision": "a196d7f9a4a65d99e1b9",
+    "url": "/PortfolioV2/static/js/main.809e6246.chunk.js"
   },
   {
-    "revision": "fa3d357ccb70488561f4",
-    "url": "/PortfolioV2/static/js/runtime-main.7679bfe3.js"
+    "revision": "34aa3b14f7dec165ab78",
+    "url": "/PortfolioV2/static/js/runtime-main.a7ca9a8c.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -136,6 +136,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PortfolioV2/static/media/fa-solid-900.c2801fb4.svg"
   },
   {
+    "revision": "114e97f2278bb0b562dd8ed00824b77b",
+    "url": "/PortfolioV2/static/media/fctrz.114e97f2.webp"
+  },
+  {
     "revision": "54f6721948491acb1997fd43496cd7df",
     "url": "/PortfolioV2/static/media/flutter.54f67219.png"
   },
@@ -242,6 +246,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "894ef0fc8dfe1c0ab658636b806049db",
     "url": "/PortfolioV2/static/media/ssgandhy.894ef0fc.png"
+  },
+  {
+    "revision": "26927302c8e8d4c2c6f36b5077b6bb5d",
+    "url": "/PortfolioV2/static/media/ucdlogo.26927302.png"
   },
   {
     "revision": "246ad3ede6a55b0102afa9871cfcbf21",
