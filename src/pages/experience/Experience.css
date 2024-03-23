@@ -52,6 +52,7 @@
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Google Sans Medium";
+  text-align: justify;
 }
 
 @media (max-width: 1380px) {

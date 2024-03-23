@@ -33,7 +33,7 @@ function DegreeCard(props) {
     borderRight: `1px solid ${theme.accentColor}`,
     borderRadius: "7px",
     width: "90%",
-    margin: "10px",
+    margin: "25px",
     boxShadow: `0px 1px 5px ${theme.accentColor}`,
     transition: "all 0.2s ease-in-out",
     ":hover": {
@@ -75,7 +75,7 @@ function DegreeCard(props) {
             style={{
               maxWidth: "100%",
               maxHeight: "100%",
-              transform: "scale(-50%, -50%)",
+              transform: "scale(70%,70%)",
               borderRadius: "50%",
             }}
             src={require(`../../assests/images/${degree.logo_path}`)}
@@ -111,7 +111,7 @@ function DegreeCard(props) {
                 </p>
               );
             })}
-            <a
+            {/* <a
               href={degree.website_link}
               target="_blank"
               rel="noopener noreferrer"
@@ -128,7 +128,7 @@ function DegreeCard(props) {
               >
                 Visit Website
               </p>
-            </a>
+            </a> */}
           </div>
         </div>
       </Fade>

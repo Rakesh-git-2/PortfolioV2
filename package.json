@@ -1,8 +1,8 @@
 {
   "private": true,
   "name": "personalPortfolio",
-  "homepage": "https://Rakesh-git-2.github.io/PortfolioV2/",
   "version": "1.0.0",
+  "homepage": "https://Rakesh-git-2.github.io/PortfolioV2/",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
@@ -18,7 +18,6 @@
     "gh-pages": "^3.2.3",
     "glamor": "^2.20.40",
     "node-fetch": "^2.6.1",
-    "node-sass": "^5.0.0",
     "prettier-package-json": "^2.1.3",
     "react": "^16.8.0",
     "react-bootstrap": "^1.4.3",

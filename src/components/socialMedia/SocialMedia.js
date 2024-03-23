@@ -15,12 +15,12 @@ export default function socialMedia() {
         <span></span>
       </a>
       <a
-        href={socialMediaLinks.gitlab}
-        className="icon-button gitlab"
+        href={socialMediaLinks.leetcode}
+        className="icon-button leetcode"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-gitlab"></i>
+        <i class="fa fa-code" aria-hidden="true"></i>
         <span></span>
       </a>
       <a

@@ -1,5 +1,6 @@
 .skills-main-div {
   display: flex;
+  align-items: center;
 }
 
 .skills-header {
