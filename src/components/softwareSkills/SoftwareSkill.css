@@ -1,23 +1,42 @@
+/* Apple Software Skill Icon Badges */
+
+.software-skills-main-div {
+  margin: 14px 0;
+}
+
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-family: "Google Sans Regular";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.8rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  cursor: pointer;
 }
 
-.software-skill-inline > i {
-  color: #868e96;
+.software-skill-inline:hover {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.4);
+  border-color: rgba(41, 151, 255, 0.4);
+  background: rgba(41, 151, 255, 0.1);
 }
 
-.software-skill-inline > i:hover {
-  color: #645beb;
+@media (max-width: 960px) {
+  .dev-icons {
+    justify-content: center;
+  }
 }

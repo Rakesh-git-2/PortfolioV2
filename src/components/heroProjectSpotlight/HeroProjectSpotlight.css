@@ -1,0 +1,177 @@
+.spotlight-card {
+  position: relative;
+  width: 380px;
+  padding: 30px 30px 28px 30px;
+  border-radius: 28px;
+  border: 1px solid;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.14),
+    0 1px 3px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 0.35s ease;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.2);
+}
+
+.spotlight-glow {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 220px;
+  height: 220px;
+  pointer-events: none;
+  transition: background 0.6s ease;
+}
+
+.spotlight-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.spotlight-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.spotlight-counter {
+  font-size: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.spotlight-content {
+  animation: spotlight-fade-in 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes spotlight-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.spotlight-category {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 980px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 14px;
+}
+
+.spotlight-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px 0;
+  min-height: 60px;
+}
+
+.spotlight-tagline {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.spotlight-quote {
+  border-left: 3px solid;
+  padding-left: 14px;
+  margin-bottom: 20px;
+}
+
+.spotlight-quote p {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 0;
+  font-style: italic;
+}
+
+.spotlight-tech-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.spotlight-tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  border: 1px solid;
+}
+
+.spotlight-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 13px 20px;
+  border-radius: 980px;
+  border: none;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.6s ease;
+  box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.25);
+}
+
+.spotlight-cta:hover {
+  transform: scale(1.02);
+}
+
+.spotlight-cta:active {
+  transform: scale(0.98);
+}
+
+.spotlight-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.spotlight-dot {
+  height: 6px;
+  border-radius: 980px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: width 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spotlight-dot:hover {
+  transform: scaleY(1.4);
+}
+
+@media (max-width: 960px) {
+  .spotlight-card {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}

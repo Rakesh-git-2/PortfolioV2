@@ -1,70 +1,75 @@
+/* Apple-Style Education Page */
+
 .education-main {
   width: 100%;
 }
 
 .basic-education {
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 1080px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
 }
 
 .heading-div {
   display: flex;
-}
-
-.heading-div > * {
-  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  margin-bottom: 36px;
 }
 
 .heading-img-div {
+  flex: 0.85;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.heading-text-div {
-  text-align: center;
-}
-
+.heading-img-div > svg,
 .heading-img-div > * {
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
+}
+
+.heading-text-div {
+  flex: 1.25;
 }
 
 .heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
   line-height: 1.1;
-  text-align: center;
-  margin-top: 100px;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.03em;
 }
 
 .heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.01em;
 }
 
-@media (max-width: 1380px) {
-  .heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .heading-sub-text {
-    font-size: 25px;
-  }
+.experience-header-detail-text {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
-  .heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .heading-sub-text {
-    font-size: 20px;
-  }
-
+@media (max-width: 960px) {
   .heading-div {
     flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .heading-text {
+    font-size: 2.2rem;
+  }
+
+  .heading-img-div {
+    order: 2;
   }
 }

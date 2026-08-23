@@ -1,27 +1,27 @@
-.certs-header {
-  font-size: 40px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
+/* Certifications Grid */
+
+.certs-header-div {
   text-align: center;
+  margin: 60px 0 32px 0;
+}
+
+.certs-header {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.01em;
 }
 
 .certs-body-div {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 1380px) {
-  .certs-header {
-    font-size: 35px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .certs-body-div {
-    flex-direction: column;
-  }
-  .certs-header {
-    font-size: 30px;
+    grid-template-columns: 1fr;
   }
 }

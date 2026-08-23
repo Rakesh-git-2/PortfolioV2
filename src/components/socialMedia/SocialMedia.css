@@ -1,95 +1,69 @@
+/* Apple-Style Minimalist Social Icons */
+
 .social-media-div {
-  font-size: 2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+  flex-wrap: wrap;
 }
 
-.icon-button i {
-  color: white;
-}
 .icon-button {
-  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #86868b;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.icon-button i {
-  border-radius: 2.6rem;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 2.6rem;
-  margin-bottom: 10px;
+.icon-button:hover {
+  transform: translateY(-2px) scale(1.06);
+  color: #f5f5f7;
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
-.linkedin i {
-  background-color: #0e76a8;
-  transition: all 0.2s ease-in-out;
+.github-btn:hover {
+  background: #24292e;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
-.linkedin i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #0e76a8;
+.linkedin-btn:hover {
+  background: #0a66c2;
+  box-shadow: 0 4px 14px rgba(10, 102, 194, 0.4);
 }
 
-.github i {
-  background-color: #333;
-  transition: all 0.2s ease-in-out;
+.leetcode-btn:hover {
+  background: #ffa116;
+  color: #000000;
+  box-shadow: 0 4px 14px rgba(255, 161, 22, 0.4);
 }
 
-.github i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #333;
+.email-btn:hover {
+  background: #0071e3;
+  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.4);
 }
 
-.leetcode i {
-  background-color: #ffcc52;
-  transition: all 0.2s ease-in-out;
+.twitter-btn:hover {
+  background: #1da1f2;
+  box-shadow: 0 4px 14px rgba(29, 161, 242, 0.4);
 }
 
-.gitlab i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #333;
-}
-
-.google i {
-  background-color: #ea4335;
-  transition: all 0.2s ease-in-out;
-}
-
-.google i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #ea4335;
-}
-
-.twitter i {
-  background-color: #1da1f2;
-  transition: all 0.2s ease-in-out;
-}
-
-.twitter i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #1da1f2;
-}
-
-.instagram i {
-  background-color: #e4405f;
-  transition: all 0.2s ease-in-out;
-}
-
-.instagram i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #e4405f;
-}
-
-/* Media Query */
-@media (max-width: 768px) {
-  .social-media-div {
-    text-align: center;
-  }
+.instagram-btn:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  box-shadow: 0 4px 14px rgba(220, 39, 67, 0.4);
 }

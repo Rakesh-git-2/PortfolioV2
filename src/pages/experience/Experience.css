@@ -1,88 +1,74 @@
+/* Apple-Style Experience Page */
+
 .experience-main {
   width: 100%;
 }
 
 .basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 1080px;
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
 }
 
 .experience-heading-div {
   display: flex;
-}
-
-.experience-heading-div > * {
-  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
 }
 
 .experience-heading-img-div {
+  flex: 0.85;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.experience-heading-text-div {
-  text-align: center;
-}
-
+.experience-heading-img-div > svg,
 .experience-heading-img-div > * {
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
+}
+
+.experience-heading-text-div {
+  flex: 1.25;
 }
 
 .experience-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
   line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.03em;
 }
 
 .experience-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.01em;
 }
 
 .experience-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
-  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0;
 }
 
-@media (max-width: 1380px) {
-  .experience-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .experience-heading-sub-text {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .experience-heading-sub-text {
-    font-size: 20px;
-  }
-
+@media (max-width: 960px) {
   .experience-heading-div {
     flex-direction: column;
+    text-align: center;
+    gap: 24px;
   }
 
-  .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
+  .experience-heading-text {
+    font-size: 2.2rem;
+  }
+
+  .experience-heading-img-div {
+    order: 2;
   }
 }

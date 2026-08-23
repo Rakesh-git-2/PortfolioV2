@@ -6,23 +6,16 @@ import { Fade } from "react-reveal";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
-import { style } from "glamor";
+import { FaGithub } from "react-icons/fa";
 
 function Projects(props) {
   const theme = props.theme;
 
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
-
   return (
     <div className="projects-main">
-      <Header theme={theme} setTheme={props.setTheme} />
+      <Header theme={theme} />
       <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
+        <Fade bottom duration={1200} distance="30px">
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
               <ProjectsImg theme={theme} />
@@ -35,32 +28,35 @@ function Projects(props) {
                 {projectsHeader.title}
               </h1>
               <p
-                className="projects-header-detail-text subTitle"
+                className="projects-header-detail-text"
                 style={{ color: theme.secondaryText }}
               >
-                {projectsHeader["description"]}
+                {projectsHeader.description}
               </p>
             </div>
           </div>
         </Fade>
+
+        {/* Project Cards Grid */}
+        <div className="projects-cards-grid">
+          {projects.data.map((repo) => {
+            return <ProjectCard key={repo.id} repo={repo} theme={theme} />;
+          })}
+        </div>
+
+        <div className="more-projects-div">
+          <a
+            className="more-projects-btn"
+            href="https://github.com/Rakesh-git-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub size={18} style={{ marginRight: 8 }} />
+            Explore More on GitHub
+          </a>
+        </div>
       </div>
-      <div className="repo-cards-div-main">
-        {projects.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
-        })}
-      </div>
-      <br />
-      <br />
-      <br />
-      <a
-        {...styles}
-        className="general-btn"
-        href="https://github.com/Rakesh-git-2"
-      >
-        More Projects (Github)
-      </a>
-      <br />
-      <br />
+
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

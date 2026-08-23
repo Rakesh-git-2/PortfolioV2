@@ -1,103 +1,71 @@
-.cert-card {
-  width: 30%;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  flex: 0 0 30%;
-  transition: all 0.2s ease-in-out;
-}
+/* Apple-Style Certification Card */
 
-.cert-header {
-  margin: 0px;
-  border-radius: 5px 5px 0px 0px;
-}
-
-.logo_img {
-  margin: 3px;
-  width: auto;
-  height: 100px;
-}
-
-.cert-body {
-  margin: 0px;
-}
-
-.cert-body-title {
-  font-family: "Google Sans Regular";
-  font-size: 20px;
-  margin: 10px;
-}
-
-.cert-body-subtitle {
-  font-family: "Google Sans Regular";
-  font-size: 18px;
-  color: #808080;
-  margin: 10px;
-}
-
-.content {
-  position: relative;
+.apple-cert-card {
   width: 100%;
-  margin: auto;
+  border-radius: 18px;
+  border: 1px solid;
   overflow: hidden;
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.content .content-overlay {
-  background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+.apple-cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+.apple-cert-logo-header {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
 }
 
-.content:hover .content-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1;
+.apple-cert-img {
+  max-height: 52px;
+  max-width: 110px;
+  object-fit: contain;
 }
 
-.content-details h3 {
-  color: #fff;
+.apple-cert-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.apple-cert-title {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.apple-cert-subtitle {
+  font-size: 0.9rem;
   font-weight: 500;
-  font-family: "Google Sans Regular";
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
+  margin: 0 0 14px 0;
 }
 
-.fadeIn-top {
-  top: 20%;
+.apple-cert-link {
+  margin-top: auto;
+  font-size: 12.5px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .cert-card {
-    width: 100%;
-  }
+.apple-cert-link:hover {
+  opacity: 0.8;
 }

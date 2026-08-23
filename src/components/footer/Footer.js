@@ -1,17 +1,25 @@
 import React from "react";
 import "./Footer.css";
-import { Fade } from "react-reveal";
 import { greeting } from "../../portfolio.js";
-/* eslint-disable jsx-a11y/accessible-emoji */
 
 export default function Footer(props) {
+  const isDark = props.theme && props.theme.name === "dark";
   return (
-    <div className="footer-div">
-      <Fade>
-        <p className="footer-text" style={{ color: props.theme.secondaryText }}>
-          Made with <span role="img">❤️</span> by {greeting.title2}
-        </p>
-      </Fade>
-    </div>
+    <footer
+      className="footer-div"
+      style={{
+        borderTop: `1px solid ${
+          isDark ? "rgba(255, 255, 255, 0.06)" : "rgba(0, 0, 0, 0.06)"
+        }`,
+      }}
+    >
+      <p
+        className="footer-text"
+        style={{ color: props.theme ? props.theme.secondaryText : "#888" }}
+      >
+        © {new Date().getFullYear()} {greeting.full_name} · Built with React &
+        AEM Edge Delivery Standards
+      </p>
+    </footer>
   );
 }

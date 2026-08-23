@@ -1,60 +1,58 @@
 import React from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
-import { style } from "glamor";
-import { autoComposeDeep } from "styletron-react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
   const theme = props.theme;
-  const styles = style({
-    boxShadow: `0px 2px 5px ${certificate.color_code}`,
-    border: `1px solid ${certificate.color_code}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${certificate.color_code}`,
-    },
-  });
 
   return (
-    <Fade bottom duration={2000} distance="20px">
-      <div className="cert-card" {...styles}>
-        <div className="content">
-          <a
-            href={certificate.certificate_link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="content-overlay"></div>
-            <div
-              className="cert-header"
-              style={{
-                backgroundColor: certificate.color_code,
-                padding: "20px",
-              }}
-            >
-              <img
-                className="logo_img"
-                src={require(`../../assests/images/${certificate.logo_path}`)}
-                alt={certificate.alt_name}
-              />
-            </div>
-            {/* <div className="content-details fadeIn-top">
-									<h3 className="content-title" style={{ color: theme.body }}>
-										Certificate
-									</h3>
-								</div> */}
-          </a>
+    <Fade bottom duration={800} distance="15px">
+      <div
+        className="apple-cert-card"
+        style={{
+          backgroundColor: theme.projectCard,
+          borderColor: theme.cardBorder,
+        }}
+      >
+        <div
+          className="apple-cert-logo-header"
+          style={{
+            backgroundColor: theme.pillBg,
+            borderBottom: `1px solid ${theme.cardBorder}`,
+          }}
+        >
+          <img
+            className="apple-cert-img"
+            src={require(`../../assests/images/${certificate.logo_path}`)}
+            alt={certificate.alt_name}
+          />
         </div>
-        <div className="cert-body">
-          <h2 className="cert-body-title" style={{ color: theme.text }}>
+
+        <div className="apple-cert-body">
+          <h3 className="apple-cert-title" style={{ color: theme.text }}>
             {certificate.title}
-          </h2>
-          <h3
-            className="cert-body-subtitle"
+          </h3>
+          <h4
+            className="apple-cert-subtitle"
             style={{ color: theme.secondaryText }}
           >
             {certificate.subtitle}
-          </h3>
+          </h4>
+
+          {certificate.certificate_link && (
+            <a
+              href={certificate.certificate_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="apple-cert-link"
+              style={{ color: theme.accentColor }}
+            >
+              <span>Verify Credential</span>
+              <FaExternalLinkAlt size={10} style={{ marginLeft: 5 }} />
+            </a>
+          )}
         </div>
       </div>
     </Fade>

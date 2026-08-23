@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "homepage": "https://Rakesh-git-2.github.io/PortfolioV2/",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "test": "react-scripts test"
   },
   "dependencies": {
