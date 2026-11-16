@@ -17,7 +17,7 @@ const greeting = {
   headline: "Senior Web Development Specialist @ Gen Digital",
   tagline: "Full-stack engineer. AEM, React, Python, AI agents.",
   subTitle:
-    "Full-stack engineer in Dublin with about 5 years of experience, mostly AEM, JavaScript/TypeScript, React and Python. I work on the Norton, LifeLock and Avira websites at Gen Digital, and I build AI tooling with MCP. Stamp 4, no sponsorship needed.",
+    "Full-stack engineer in Dublin with about 5 years of experience, mostly AEM (Java and front end), JavaScript/TypeScript, React and Python. I work on the Norton, LifeLock and Avira websites at Gen Digital, and I build AI tooling with MCP. Stamp 4, no sponsorship needed.",
   resumeLink: `${process.env.PUBLIC_URL}/Rakesh_Srinivasan_Resume.pdf`,
   mail: "rakesh_srinivasan@outlook.com",
   location: "Dublin, Ireland",
@@ -38,7 +38,7 @@ const skills = {
       fileName: "FullStackImg",
       category: "Enterprise Systems",
       skills: [
-        "Building AEM components (HTL, Sling Models, OSGi services) for the Norton, LifeLock and Avira websites, with React on the front end.",
+        "Building AEM components for the Norton, LifeLock and Avira websites: Java back end (Sling Models, OSGi services, servlets), HTL and React on the front end.",
         "Working on the move from AEM 6.5 to AEM as a Cloud Service, and on Edge Delivery Services pages.",
         "Navigation, pricing, quizzes and other high-traffic components, with localisation, accessibility, analytics and SEO.",
         "A small CLI that generates AEM component boilerplate.",
@@ -48,6 +48,11 @@ const skills = {
           skillName: "AEM Cloud",
           fontAwesomeClassname: "simple-icons:adobe",
           style: { color: "#FF0000" },
+        },
+        {
+          skillName: "Java",
+          fontAwesomeClassname: "simple-icons:openjdk",
+          style: { color: "#EA2D2E" },
         },
         {
           skillName: "Apache Sling",
@@ -258,6 +263,7 @@ const experience = {
           location: "Dublin, Ireland",
           tags: [
             "AEM",
+            "Java",
             "React",
             "TypeScript",
             "Sling Models",
@@ -271,11 +277,11 @@ const experience = {
             "Content matching: Built a production feature that matches related content to pages by keyword, replacing manual curation.",
             "Components: Built high-traffic UI components (global navigation, social proof, interactive quizzes, password tools) from design to production, with localisation and accessibility.",
             "Pricing: Built dynamic pricing components with promotional highlights, and moved price calculation to remove a client-side race condition.",
-            "AEM: Built AEM components with HTL and Sling Models, worked on the move from AEM 6.5 to AEM as a Cloud Service and on Edge Delivery Services pages, and shipped a site-wide reskin behind feature flags.",
+            "AEM: Built AEM components end to end: Java back end (Sling Models, OSGi services, servlets) and HTL front end. Worked on the move from AEM 6.5 to AEM as a Cloud Service and on Edge Delivery Services pages; shipped a site-wide reskin behind feature flags.",
             "Analytics and SEO: Added structured analytics events to key components and fixed SEO issues (semantic markup, meta tags).",
           ],
           description:
-            "Building components, pricing, analytics and SEO for the Norton, LifeLock and Avira websites on AEM. Built an internal AI agent that connects Jira, Figma and DevTools through MCP.",
+            "Building AEM components (Java back end and front end), pricing, analytics and SEO for the Norton, LifeLock and Avira websites. Built an internal AI agent that connects Jira, Figma and DevTools through MCP.",
           color: "#2997FF",
         },
         {
