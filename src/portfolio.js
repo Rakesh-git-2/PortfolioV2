@@ -209,7 +209,7 @@ const degrees = {
       duration: "Sep 2023 – Aug 2024",
       descriptions: [
         "Location: Dublin, Ireland",
-        "Modules included quantitative data analysis, web development (Django, React), UX design, cloud and machine learning systems, and AI ethics. Dissertation on voice interface usability.",
+        "Modules included quantitative data analysis, web development (Django, React), UX design, cloud and machine learning systems, and AI ethics. Research project on voice interface usability.",
       ],
       website_link: "https://www.ucd.ie/",
     },
@@ -430,14 +430,38 @@ const projects = {
     {
       id: "2",
       featured: false,
+      category: "Side project",
+      name: "SurveyHub",
+      tagline: "Surveys drafted and summarised by Gemini",
+      url: "https://surveyhub-aha.pages.dev",
+      demo_url: "https://surveyhub-aha.pages.dev",
+      github_url: "https://github.com/Rakesh-git-2/surveyhub",
+      description:
+        "A survey platform where Gemini drafts a survey from a prompt and summarises the responses. Includes a survey builder, per-question charts, CSV export, team roles, and HMAC-signed webhooks on new responses.",
+      highlights: [
+        "Django REST Framework API with JWT auth and PostgreSQL, on Fly.io",
+        "Next.js 15 and React 19 front end on Cloudflare Pages",
+        "Webhooks signed with HMAC-SHA256 so receivers can verify them",
+      ],
+      languages: [
+        { name: "Django", iconifyClass: "logos:django-icon" },
+        { name: "Next.js 15", iconifyClass: "logos:nextjs-icon" },
+        { name: "TypeScript", iconifyClass: "logos:typescript-icon" },
+        { name: "PostgreSQL", iconifyClass: "logos:postgresql" },
+        { name: "Google Gemini", iconifyClass: "logos:google-gemini" },
+      ],
+    },
+    {
+      id: "3",
+      featured: false,
       category: "MSc research",
       name: "Voice usability vs cognitive load",
-      tagline: "MSc dissertation, University College Dublin",
+      tagline: "MSc research project, University College Dublin",
       url: "https://github.com/Rakesh-git-2/SUS_vs_RTLX",
       demo_url: "",
       github_url: "https://github.com/Rakesh-git-2/SUS_vs_RTLX",
       description:
-        "A study of how usability scores (System Usability Scale) relate to cognitive load (Raw NASA-TLX) for voice interfaces, analysed in R.",
+        "A study of how usability (System Usability Scale) relates to cognitive load (Raw NASA-TLX) for voice assistants. Across 100 Alexa users the two were strongly correlated (r = 0.68, p < .001), unlike earlier results for web interfaces.",
       highlights: [
         "Correlation analysis between SUS and RTLX scores",
         "Hypothesis tests and charts in R",
@@ -448,7 +472,7 @@ const projects = {
       ],
     },
     {
-      id: "3",
+      id: "4",
       featured: false,
       category: "LLM",
       name: "RetailBot",
@@ -470,7 +494,7 @@ const projects = {
       ],
     },
     {
-      id: "4",
+      id: "5",
       featured: false,
       category: "Earlier projects",
       name: "Medium-style blog",
@@ -492,41 +516,19 @@ const projects = {
       ],
     },
     {
-      id: "5",
-      featured: false,
-      category: "Earlier projects",
-      name: "Node login system",
-      tagline: "Express and PostgreSQL auth with JWT",
-      url: "https://github.com/Rakesh-git-2/node-login-system",
-      demo_url: "",
-      github_url: "https://github.com/Rakesh-git-2/node-login-system",
-      description:
-        "Sign-up and login with an Express API, bcrypt password hashing, JWT access tokens and a PostgreSQL user table, with a React client.",
-      highlights: [
-        "bcrypt hashing and JWT-protected routes",
-        "Express API with a React client",
-      ],
-      languages: [
-        { name: "Node.js", iconifyClass: "logos:nodejs-icon" },
-        { name: "Express", iconifyClass: "logos:express" },
-        { name: "PostgreSQL", iconifyClass: "logos:postgresql" },
-        { name: "React", iconifyClass: "logos:react" },
-      ],
-    },
-    {
       id: "6",
       featured: false,
       category: "Earlier projects",
       name: "Customer churn prediction",
-      tagline: "Logistic regression vs KNN",
+      tagline: "Logistic regression vs KNN on telecom churn data",
       url: "https://github.com/Rakesh-git-2/Churn-prediction",
       demo_url: "",
       github_url: "https://github.com/Rakesh-git-2/Churn-prediction",
       description:
-        "A notebook comparing logistic regression and KNN for predicting customer churn, with exploratory analysis and confusion matrices.",
+        "A 2021 notebook that predicts which telecom customers will leave, on 7,032 customers. Logistic regression reached 80.7% test accuracy and KNN 76.1%, against a 73% no-churn baseline.",
       highlights: [
-        "Exploratory analysis and feature selection",
-        "Logistic regression and KNN compared on the same split",
+        "17 customer features encoded for scikit-learn",
+        "Both models compared on the same held-out third",
       ],
       languages: [
         { name: "Python", iconifyClass: "logos:python" },
