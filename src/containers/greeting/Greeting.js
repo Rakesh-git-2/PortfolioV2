@@ -31,7 +31,7 @@ export default function Greeting(props) {
                   size={11}
                   style={{ marginRight: 6, color: theme.accentColor }}
                 />
-                Senior Software Engineer @ GenDigital
+                {greeting.headline}
               </span>
               <span
                 className="apple-hero-pill"

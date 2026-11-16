@@ -17,8 +17,7 @@ export default function Footer(props) {
         className="footer-text"
         style={{ color: props.theme ? props.theme.secondaryText : "#888" }}
       >
-        © {new Date().getFullYear()} {greeting.full_name} · Built with React &
-        AEM Edge Delivery Standards
+        © {new Date().getFullYear()} {greeting.full_name} · Built with React
       </p>
     </footer>
   );
